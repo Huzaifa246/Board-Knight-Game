@@ -8,7 +8,7 @@
 2. Enter Your Name
 3. Than Timer will start and you have to collect treasure and avoid dragons
 4. If you accidently hit dragon you will die.
-5. You can move your knight in 8 directions (up, down, left, right)
+5. You can move your knight in 4 directions (up, down, left, right)
 
 "# To start Back End"
 1. npm run dev
