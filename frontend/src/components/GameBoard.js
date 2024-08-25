@@ -26,7 +26,7 @@ const GameBoard = () => {
     useEffect(() => {
         async function fetchLeaderboard() {
             try {
-                const response = await axios.get('http://localhost:5000/api/leaderboard');
+                const response = await axios.get('https://board-knight-game.vercel.app/api/leaderboard');
                 setLeaderboard(response.data);
             } catch (error) {
                 console.error('Error fetching leaderboard:', error);
@@ -92,7 +92,7 @@ const GameBoard = () => {
 
     async function saveScoreToBackend(playerName, timeTaken) {
         try {
-            await axios.post('http://localhost:5000/api/scores', {
+            await axios.post('https://board-knight-game.vercel.app/api/scores', {
                 player: playerName,
                 time: timeTaken,
             });
